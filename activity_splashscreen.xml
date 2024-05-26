@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Splashscreen">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        app:lottie_rawRes="@raw/animation1"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="false"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SUPER PLAYER"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/animationView"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:visibility="gone"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="Let the Music Play 🎶"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_below="@+id/textView"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info" />
+
+    <TextView
+        android:id="@+id/version"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:paddingBottom="60dp"
+        android:text="L.O.A.D.I.N.G>>>"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textAppearance="@style/TextAppearance.Compat.Notification.Info" />
+
+</RelativeLayout>
